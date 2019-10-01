@@ -7,7 +7,12 @@
 
 
 class Rueda {
+    float tamano;
+    float presion;
 
+    public:
+        Rueda();
+        Rueda(const float &tamano, const float &presion);
 };
 
 

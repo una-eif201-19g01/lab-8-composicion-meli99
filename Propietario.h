@@ -5,9 +5,16 @@
 #ifndef LAB_7_COMPOSICION_PROPIETARIO_H
 #define LAB_7_COMPOSICION_PROPIETARIO_H
 
+#include <iostream>
+using namespace std;
 
 class Propietario {
+    string nombre;
 
+    public:
+        Propietario();
+        Propietario(const string &nombre);
+        string toString();
 };
 
 

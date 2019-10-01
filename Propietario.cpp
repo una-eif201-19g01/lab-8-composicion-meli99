@@ -3,3 +3,11 @@
 //
 
 #include "Propietario.h"
+
+Propietario::Propietario() {
+    nombre = "";
+}
+
+Propietario::Propietario(const string &nombre) {
+    Propietario::nombre = nombre;
+}

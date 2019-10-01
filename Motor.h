@@ -7,7 +7,13 @@
 
 
 class Motor {
+    bool estado;
 
+    public:
+        Motor();
+        Motor(const bool &estado);
+        void encender();
+        void apagar();
 };
 
 

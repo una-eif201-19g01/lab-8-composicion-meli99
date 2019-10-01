@@ -3,3 +3,11 @@
 //
 
 #include "Motor.h"
+
+Motor::Motor() {
+    estado = false;
+}
+
+Motor::Motor(const bool &estado) {
+    Motor::estado = estado;
+}
