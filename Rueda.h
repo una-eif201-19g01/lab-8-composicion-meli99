@@ -13,6 +13,7 @@ class Rueda {
     public:
         Rueda();
         Rueda(const float &tamano, const float &presion);
+        void cambiarPresion();
 };
 
 

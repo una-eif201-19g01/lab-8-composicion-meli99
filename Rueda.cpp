@@ -13,3 +13,7 @@ Rueda::Rueda(const float &tamano, const float &presion) {
     Rueda::tamano = tamano;
     Rueda::presion = presion;
 }
+
+void Rueda::cambiarPresion() {
+    // Rueda::presion = presion;
+}

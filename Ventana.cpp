@@ -15,3 +15,11 @@ Ventana::Ventana(const bool &polarizada, const bool &electrica, const bool &esta
     Ventana::electrica = electrica;
     Ventana::estado = estado;
 }
+
+void Ventana::abrir() {
+    estado = true;
+}
+
+void Ventana::cerrar() {
+    estado = false;
+}

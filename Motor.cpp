@@ -11,3 +11,11 @@ Motor::Motor() {
 Motor::Motor(const bool &estado) {
     Motor::estado = estado;
 }
+
+void Motor::encender() {
+    estado = true;
+}
+
+void Motor::apagar() {
+    estado = false;
+}

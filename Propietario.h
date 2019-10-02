@@ -10,12 +10,14 @@ using namespace std;
 
 class Propietario {
     string nombre;
+    // Carro carro;
 
     public:
         Propietario();
         Propietario(const string &nombre);
         string toString();
 };
+#include "Carro.h"
 
 
 #endif //LAB_7_COMPOSICION_PROPIETARIO_H

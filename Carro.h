@@ -5,6 +5,7 @@
 #include "Puerta.h"
 #include "Rueda.h"
 #include "Motor.h"
+#include "Propietario.h"
 using namespace std;
 
 class Carro {
@@ -14,9 +15,11 @@ class Carro {
     Puerta puerta;
     Rueda rueda;
     Motor motor;
+    Propietario propietario;
 
     public:
         Carro();
+        Carro(string placa, int litros, Puerta carPuerta, Rueda carRueda, Motor carMotor);
         int tostring();
         void encenderMotor();
         void abrirPuertas();
