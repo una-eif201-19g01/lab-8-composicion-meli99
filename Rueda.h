@@ -4,7 +4,8 @@
 
 #ifndef LAB_7_COMPOSICION_RUEDA_H
 #define LAB_7_COMPOSICION_RUEDA_H
-
+#include <iostream>
+using namespace std;
 
 class Rueda {
     float tamano;
@@ -14,6 +15,7 @@ class Rueda {
         Rueda();
         Rueda(const float &tamano, const float &presion);
         void cambiarPresion();
+        string toString();
 };
 
 

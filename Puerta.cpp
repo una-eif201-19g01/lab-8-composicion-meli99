@@ -4,13 +4,18 @@
 
 #include "Puerta.h"
 Puerta::Puerta() {
-    ventana = nullptr;
+    ventana = new Ventana();
     estado = false;
 }
 
 Puerta::Puerta(Ventana* ventana, const bool &estado) {
     Puerta::ventana = ventana;
     Puerta::estado = estado;
+}
+
+Puerta::~Puerta() {
+    delete ventana;
+    ventana = nullptr;
 }
 
 void Puerta::abrirPuerta() {
@@ -27,4 +32,19 @@ void Puerta::abrirVentana() {
 
 void Puerta::cerrarVentana() {
     ventana->cerrar();
+}
+
+string Puerta::toString() {
+    string propiedades;
+    string puertaEstado;
+
+    if (estado == true) {
+        puertaEstado = "abiertas";
+    } else {
+        puertaEstado = "cerradas";
+    }
+    
+    propiedades += "Las puertas están " + puertaEstado + "\n" + ventana->toString();
+
+    return (propiedades);
 }

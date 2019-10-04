@@ -5,6 +5,8 @@
 #ifndef LAB_7_COMPOSICION_PUERTA_H
 #define LAB_7_COMPOSICION_PUERTA_H
 #include "Ventana.h"
+#include <iostream>
+using namespace std;
 
 class Puerta {
     Ventana* ventana;
@@ -13,10 +15,13 @@ class Puerta {
     public:
         Puerta();
         Puerta(Ventana* ventana, const bool &estado);
+        ~Puerta();
         void abrirPuerta();
         void cerrarPuerta();
         void abrirVentana();
-        void cerrarVentana();
+        void cerrarVentana();      
+
+        string toString();
 };
 
 

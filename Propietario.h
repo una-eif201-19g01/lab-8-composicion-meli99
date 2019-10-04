@@ -7,17 +7,18 @@
 
 #include <iostream>
 using namespace std;
+// #include "Carro.h"
 
 class Propietario {
     string nombre;
-    // Carro carro;
 
     public:
         Propietario();
         Propietario(const string &nombre);
         string toString();
+        void setNombre(const string &nombre);
+        string getNombre();
 };
-#include "Carro.h"
 
 
 #endif //LAB_7_COMPOSICION_PROPIETARIO_H

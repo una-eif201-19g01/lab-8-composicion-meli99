@@ -5,6 +5,8 @@
 #ifndef LAB_7_COMPOSICION_MOTOR_H
 #define LAB_7_COMPOSICION_MOTOR_H
 
+#include <iostream>
+using namespace std;
 
 class Motor {
     bool estado;
@@ -12,8 +14,11 @@ class Motor {
     public:
         Motor();
         Motor(const bool &estado);
+        virtual ~Motor();
         void encender();
         void apagar();
+
+        string toString();
 };
 
 
